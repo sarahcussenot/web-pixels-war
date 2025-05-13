@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixel war</title>
+    <link rel="stylesheet" href="./rendu_pixel_war.css" /> 
+
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="titre">
+                <span id="t1">P</span>
+                <span id="t2">ixel</span>
+                <span id="t3">W</span>
+                <span id="t4">ar  !!!</span>
+            </div> 
+        <div class="entre">
+            <div class="lien">
+                <label for="adresse">Adresse :</label>
+                <input type="text" name="adresse" id="adresse" value="https://pixels-war.oie-lab.net">
+            </div>
+            <div class="carte">
+                <label for="carte">Carte :</label>
+                <input type="text" name="carte" id="carte" value="TEST">
+            </div>
+        </div>
+        <div class="jeu">
+            <div class="map" id="map">
+                <!--grille gérée dynamiquement par le js-->
+            </div>
+            <div class="temps" id="attendre">
+                <span id="compte_rebours">Prêt !</span>
+                <div class="progress-container">
+                  <div class="progress-bar" id="progress-bar"></div>
+                </div>
+              </div>
+              <!--partie modifiée pour l'afficahe du temsp d'attente au-dessus-->
+                    
+            <div class="couleur" id="couleur"> 
+                <input type="color" id="choix_couleur" value="#000000" title="Choisis ta couleur">
+                <button type="button" class="btn btn-primary" id="refresh">Rafraîchir</button>
+            </div>
+        </div>
+    </div>
+    <script src="./rendu_pixel_war.js" defer></script>
+</body>
+</html>
